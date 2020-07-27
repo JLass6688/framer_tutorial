@@ -1,38 +1,140 @@
-.App {
+body{
+  font-family: 'Work Sans', sans-serif;
+  user-select: none;
+}
+
+div.contentContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+div.contentContainer div.arrowContainer {
+  position: absolute;
+  top: 500px;
+  width: 150px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+div.contentContainer div.arrowContainer * {
+  display: inline-block;
+}
+
+div.contentContainer div.arrowContainer h4 {
+  line-height: 40px;
+  margin: 0;
+  vertical-align: top;
+}
+
+div.contentContainer div.arrowContainer svg {
+  width: 40px;
+}
+
+div.arrownext {
+  right: 15px;
+}
+
+div.arrowNext * {
+  float: right;
+}
+
+div.arrowprevious {
+  left: 15px;
+}
+
+div#homepageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+div#homepageContainer div.panel {
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+
+div#homepageContainer div.underline {
+  width: 200px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+div#homeLogoContainer {
+  z-index: 3;
+  position: absolute;
+  top: 455px;
+  width: 100%;
+}
+
+div#homepageContainer h2 {
+  color: #FFF;
   text-align: center;
+  font-size: 64px;
+  margin: 25px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div#logoContainer {
+  text-align: center;
+  padding-top: 470px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div#logoContainer div {
+  display: inline-block;
+  font-size: 64pt;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div#logoContainer div.letter {
+  color: #FFF;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+div#logoContainer div.word {
+  margin: 0 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div#logoContainer div.animationsContainer {
+  display: block;
+  font-size: 18px;
+  color: #FFF;
+  border-top: 0.5px dashed rgb(255,255,255, 0.25);
+  width: 35%;
+  margin: 150px auto 0;
 }
+
+div#logoTextContainer {
+  cursor: pointer;
+}
+
+div.animationsContainer h4 {
+  font-weight: 200;
+}
+
+button.animationOption {
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 5px 20px;
+  padding: 5px;
+  cursor: pointer;
+  border: 0.5px solid rgb(255,255,255, 0.25);
+}
+
+button.selected {
+  border-color: #72C2AA;
+  color: #72C2AA;
+}
+
